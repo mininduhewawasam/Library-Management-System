@@ -1,0 +1,61 @@
+<h2 align="center">Add Library Items From Here</h2>
+
+<div class="Forms1">
+
+  <form [formGroup]="AddBookForm" class="addbookForm"   (submit)="addBookItem()">
+    <h4 align="center">Add Books</h4>
+    ISBN No<br>
+    <input type="text"  formControlName="Bisbn"  class="form-control"><br><br>
+    Name of the book<br>
+    <input type="text" formControlName="title" class="form-control"><br><br>
+    Sector of the book<br>
+    <input type="text" formControlName="sector" class="form-control"><br><br>
+    Publisher<br>
+    <input type="text" formControlName="pname" class="form-control"><br><br>
+    Publication Date<br>
+    <input type="date" formControlName="pdate" class="form-control"><br><br>
+    Author<br>
+    <input type="text" formControlName="author" class="form-control"><br><br>
+    No of pages<br>
+    <input type="text" formControlName="pages" class="form-control"><br><br>
+
+    <button type="submit" [disabled]="AddBookForm.invalid" value="add">Add Book</button><br>
+
+
+  </form>
+
+</div>
+
+<br><br>
+
+<div class="Forms2">
+  <form [formGroup]="AddDVDForm" class="addDVDForm"  (submit)="addDVDItem()">
+    <h4 align="center">Add DVD's</h4>
+    ISBN No<br>
+    <input type="text" formControlName="DIsbn" class="form-control"><br><br>
+    Name of the DVD<br>
+    <input type="text" formControlName="DVDname" class="form-control"><br><br>
+    Sector of the DVD<br>
+    <input type="text" formControlName="dsector" class="form-control"><br><br>
+    Publication Date<br>
+    <input type="date" formControlName="pubdate" class="form-control"><br><br>
+    Producer<br>
+    <input type="text" formControlName="producer" class="form-control"><br><br>
+    Actors<br>
+    <input type="text" formControlName="actors" class="form-control"><br><br>
+    Languages<br>
+    <input type="text" formControlName="language" class="form-control"><br><br>
+    Subtitles available<br>
+    <input type="text" formControlName="subAvailable" class="form-control">
+
+    <button type="submit"  [disabled]="AddDVDForm.invalid" value="add">Add DVD</button>
+
+  </form>
+</div>
+
+<div class="valdationMEssage">
+  <p align="center">
+  {{postRequestResponse}}
+  </p>
+</div>
+

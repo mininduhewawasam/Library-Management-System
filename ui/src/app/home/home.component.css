@@ -1,0 +1,19 @@
+#heading{
+  margin-top: 200px;
+  color: #cccccc;
+  text-shadow: 4px 4px 2px black;
+  font-size: 40px;
+}
+
+
+button{
+  width:20%;
+  height: 50px;
+}
+
+.homeIMG{
+  width: 30%;
+  height: 30%;
+  margin-left: 35%;
+  margin-bottom: 10px;
+}

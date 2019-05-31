@@ -1,0 +1,25 @@
+<h2 align="center">Borrow Library Items</h2>
+
+
+<div class="Forms">
+
+  <form [formGroup]="borrowItemform" class="addbookForm" (submit)="borrowItem()" >
+
+    ISBN No<br>
+    <input type="text" formControlName="IsbnNo" class="form-control"><br><br>
+    Reader's ID No<br>
+    <input type="text" formControlName="readerID" class="form-control"><br><br>
+    Borrowed Date<br>
+    <input type="date" formControlName="DateofBorrowed" class="form-control"><br><br>
+    Borrowed Time<br>
+    <input type="time" formControlName="TimeofBorrowed" class="form-control"><br><br>
+
+    <button type="submit" [disabled]="borrowItemform.invalid"  value="add">Borrow Item</button>
+  </form>
+</div>
+
+<div class="valdationMEssage">
+  <p align="center">
+    {{postRequestResponse}}
+  </p>
+</div>

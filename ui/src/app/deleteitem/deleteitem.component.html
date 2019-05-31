@@ -1,0 +1,19 @@
+<br><br><br>
+
+<div class="Forms">
+  <h2 align="center">Delete Library Items</h2>
+
+<form [formGroup]="deleteItemForm" class="addbookForm" (submit)="deleteItem()" >
+
+  <h4 align="center">Enter the ISBN of the library item to be removed</h4>
+  ISBN No<br>
+  <input type="text" formControlName="IsbnremoveItem" class="form-control" ><br><br>
+  <button type="submit" [disabled]="deleteItemForm.invalid" value="add">Delete Item</button>
+
+</form>
+</div>
+<div class="valdationMEssage">
+  <p align="center">
+    {{postRequestResponse}}
+  </p>
+</div>
